@@ -1,4 +1,4 @@
-# ANA-XX_brief-description
+# ANA_26037_naegleria kill curve (optimized)
 
 *Advice for use*: This repository uses core scripts managed in a separate repository ([punctalyze](https://github.com/ocarmo/punctalyze)) to promote modularity and code reuse across projects in the Boeynaems lab. The checklist below outlines the steps to initiate an experiment repository in a tidy manner and add the analysis submodule. The punctalyze module is under heavy construction, any changes should be committed in a non-breaking manner, as they link to the main branch. Please check off the tick boxes with an 'x' as you go. This repository assumes elementary knowledge of python and git.
 
@@ -33,25 +33,23 @@ git checkout -b dev_branch_name
 ## Experiment details
 
 **Purpose**: 
-Detecting and analyzing intracellular puncta from light micrographs
+Determine if lipoprotein depletion affects peptide toxicity in naegleria with mamammalian cathelicidins 
 
 **Cell Type**: 
-Neuro2a cells
+naegleria bruceri 
 
 **Instrument/techniques**: 
-LSM900, experiment block set up, 10% excitation for 40.51 sec, acquisitions at mCh 0.6% 600V.
+LSM900, DIC/ PI-594 20X lens 0.45x zoom
 
 **Data produced:** 
 See results folder
 
 **Analysis:** 
-- scrape data from online if necessary
-- initial wrangling of images into numpy arrays
-- cell segmentation
-- segmentation validation
-- detecting puncta (foci of high-intensity pixels) and extracting feature information per punctum
-- averaging puncta feature information per cell
-- plotting
+-load in files 
+-rename files 
+-cell mask segmentation
+-cell mask manual validation 
+-cell feature extraction 
 
 ## Making contributions to punctalyze
 ### if you make changes to your fork that you want to merge to the main branch at [punctalyze](https://github.com/ocarmo/punctalyze):
