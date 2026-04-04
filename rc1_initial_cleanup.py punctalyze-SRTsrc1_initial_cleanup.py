@@ -1,0 +1,11 @@
+M	.gitignore
+M	README.md
+D	raw_data/placeholder.txt
+A	src/0_data_retrieval.py
+A	src/1_initial_cleanup.py
+A	src/2_cellpose.py
+A	src/3_napari.py
+A	src/4_puncta_detection.py
+A	src/5_puncta_percell_calculations.py
+A	src/6_puncta_plotting.py
+A	src/intensity_lineplot.py
